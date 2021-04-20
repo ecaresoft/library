@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+   <div id="app">
+      <div class="row">
+         <div class="col col-md-2" >
+            <SideBar></SideBar>
+         </div>
+         <div class="col col-md-5">
+         </div>
+         <div class="col col-md-5" style="background-color: #FAFAFA; min-height: 100%;">
+            <div class="container" >
+                <Swagger v-bind:yamlSource="y1"></Swagger>
+            </div>
+         </div>
+      </div>
+   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+   import SideBar from './components/SideBar.vue'
+   import Swagger from './components/Swagger.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+   export default {
+     name: 'App',
+     components: {
+       SideBar,
+       Swagger
+     },
+     data(){
+      return {
+        y1: require("./ymls/swagger-config.yaml")
+      }
+     }
+ }
+
+
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

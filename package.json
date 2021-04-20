@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.10.2",
-    "vue": "^2.6.12"
+    "css-loader": "^3.6.0",
+    "json-loader": "^0.5.7",
+    "style-loader": "^2.0.0",
+    "swagger-ui": "^3.47.1",
+    "vue": "^2.6.12",
+    "yaml-loader": "^0.6.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.12",
@@ -32,7 +37,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+    "no-unused-vars": "off"
+  }
   },
   "browserslist": [
     "> 1%",

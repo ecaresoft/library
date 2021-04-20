@@ -14,11 +14,13 @@
     "style-loader": "^2.0.0",
     "swagger-ui": "^3.47.1",
     "vue": "^2.6.12",
+    "vue-router": "^3.2.0",
     "yaml-loader": "^0.6.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.12",
     "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "^4.5.12",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
@@ -38,8 +40,8 @@
       "parser": "babel-eslint"
     },
     "rules": {
-    "no-unused-vars": "off"
-  }
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",

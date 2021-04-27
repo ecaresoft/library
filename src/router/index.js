@@ -15,6 +15,12 @@ const routes = [
     name: 'Niffer',
 
     component: () => import('../views/Niffler.vue')
+  },
+  {
+    path: '/apollo',
+    name: 'Apollo',
+
+    component: () => import('../views/Apollo.vue')
   }
 ]
 

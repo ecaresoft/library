@@ -1,0 +1,371 @@
+openapi: "3.0.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "Niffler API"
+
+servers:
+- url: niffler-staging.ecs-apis.com
+  description: Staging server
+
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header
+    
+paths:
+  /user:
+    post:
+      summary: "description"
+      tags:
+      - "User"
+    patch:
+      summary: "description"
+      tags:
+      - "User"
+    put:
+      summary: "description"
+      tags:
+      - "User"
+
+  /items:
+    get:
+      summary: "description"
+      tags:
+      - "Items"
+    post:
+      summary: "description"
+      tags:
+      - "Items"
+  /items/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Items"
+    patch:
+      summary: "description"
+      tags:
+      - "Items"
+    put:
+      summary: "description"
+      tags:
+      - "Items"
+    delete:
+      summary: "description"
+      tags:
+      - "Items"
+  /rules:
+    get:
+      summary: "description"
+      tags:
+      - "Rules"
+    post:
+      summary: "description"
+      tags:
+      - "Rules"
+  /rules/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Rules"
+    patch:
+      summary: "description"
+      tags:
+      - "Rules"
+    put:
+      summary: "description"
+      tags:
+      - "Rules"
+    delete:
+      summary: "description"
+      tags:
+      - "Rules"
+  /rules/{rule_id}/domains:
+    get:
+      summary: "description"
+      tags:
+      - "Rules"
+  /rules/{rule_id}/domains/page-total:
+    get:
+      summary: "description"
+      tags:
+      - "Rules"
+  /domains:
+    get:
+      summary: "description"
+      tags:
+      - "Domains"
+    post:
+      summary: "description"
+      tags:
+      - "Domains"
+  /domains/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Domains"
+    patch:
+      summary: "description"
+      tags:
+      - "Domains"
+    put:
+      summary: "description"
+      tags:
+      - "Domains"
+    delete:
+      summary: "description"
+      tags:
+      - "Domains"
+  /domains/{domain_id}/price-lists:
+    post:
+      summary: "description"
+      tags:
+      - "Domains"
+  /price-lists:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists"
+    post:
+      summary: "description"
+      tags:
+      - "PriceLists"
+  /price-lists/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists"
+    patch:
+      summary: "description"
+      tags:
+      - "PriceLists"
+    put:
+      summary: "description"
+      tags:
+      - "PriceLists"
+    delete:
+      summary: "description"
+      tags:
+      - "PriceLists"
+  /price-lists/{id}/children:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/items:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/items/page-total:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/products:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/rules:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/ref-domain-price-lists:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/import:
+    put:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /price-lists/{id}/search-items:
+    get:
+      summary: "description"
+      tags:
+      - "PriceLists Features"
+  /entities:
+    get:
+      summary: "description"
+      tags:
+      - "Entities"
+    post:
+      summary: "description"
+      tags:
+      - "Entities"
+  /entities/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Entities"
+    patch:
+      summary: "description"
+      tags:
+      - "Entities"
+    put:
+      summary: "description"
+      tags:
+      - "Entities"
+    delete:
+      summary: "description"
+      tags:
+      - "Entities"
+  /entities/{id}/price:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /entities/{id}/price-list:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /entities/{id}/import-lists:
+    post:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /entities/{id}/products:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /entities/{id}/products-entity:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+
+  /entities/{id}/products/page-total:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"  
+  /entities/{id}/rules:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /entities/{id}/search-products:
+    get:
+      summary: "description"
+      tags:
+      - "Entities Features"
+  /products:
+    get:
+      summary: "description"
+      tags:
+      - "Products"
+    post:
+      summary: "description"
+      tags:
+      - "Products"
+  /products/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Products"
+    patch:
+      summary: "description"
+      tags:
+      - "Products"
+    put:
+      summary: "description"
+      tags:
+      - "Products"
+    delete:
+      summary: "description"
+      tags:
+      - "Products"
+  /rel-entity-user:
+    get:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+    post:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+  /rel-entity-user/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+    patch:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+    put:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+    delete:
+      summary: "description"
+      tags:
+      - "Relationship Entity User"
+  /ref-domain-price-lists:
+    get:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+    post:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+  /ref-domain-price-lists/{id}:
+    get:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+    patch:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+    put:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+    delete:
+      summary: "description"
+      tags:
+      - "Reference Domain Price Lists"
+  /link-item:
+    get:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /ProductUdmPrice:
+    get:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /product/price:
+    get:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /product:
+    get:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /import-products:
+    put:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /import-products-entity:
+    put:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  /import-domains:
+    put:
+      summary: "description"
+      tags:
+      - "Miscellaneous"
+  

@@ -5,7 +5,7 @@
            <NifflerDoc></NifflerDoc>
          </div>
          <div class="col col-md-6" style="background-color: #FAFAFA; min-height: 100%;">
-            <div class="container" style="overflow-y: scroll; height: 100%" >
+            <div class="container" >
                <Swagger v-bind:yamlSource="yaml"></Swagger>
             </div>
          </div>
@@ -24,7 +24,7 @@
      },
      data(){
       return {
-        yaml: require("../ymls/niffler.yaml")
+        yaml: require("../ymls/apollo.yaml")
       }
      }
    }
